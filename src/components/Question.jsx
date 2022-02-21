@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
-import { Link } from "react-router-dom"
+import React, { useRef } from 'react';
+import { Link } from "react-router-dom";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa"
-import { countries } from "../world_countries/data/world"
+import { countries } from "../world_countries/data/world";
 
 const Question = ({ randomFlagArray, correctFlagNumber, generateFlag, score, wrong, isItCorrect, disabled, selected, step, handleClick }) => {
     let correctFlag = countries[randomFlagArray[correctFlagNumber]]
